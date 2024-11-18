@@ -25,7 +25,7 @@ let pool = mysql.createPool({
 app.post('/submit-form', (req, res) => {
     const { numeroCuenta, nombreCliente, saldo, tipoCuenta } = req.body;
 
-    const query = 'INSERT INTO cliente (numeroCuenta, nombreCliente, saldo, tipoCuenta) VALUES (?, ?, ?, ?)';
+    const query = 'INSERT INTO cliente (numero_cuenta, nombre_cliente, saldo, tipo_cuenta) VALUES (?, ?, ?, ?)';
     pool.query(query, [numeroCuenta, nombreCliente, saldo, tipoCuenta], (err, result) => {
         if (err) {
             console.error('Error al insertar datos: ' + err.stack);
