@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const mysql = require('mysql2');
 const path = require('path');
 const app = express();
-const ip = '100.29.166.86';
+const ip = '52.6.93.103';
 const port = 3300;
 
 // Configuración de middleware
