@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+
+/* Estilo del header */
+header {
+    background-color: #333;
+    /* Fondo oscuro */
+    padding: 10px 20px;
+}
+
+/* Estilo de la lista */
+header ul {
+    list-style: none;
+    /* Sin viñetas */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* Coloca los elementos en línea */
+    justify-content: flex-start;
+    /* Alinea a la izquierda */
+}
+
+/* Estilo de los elementos de la lista */
+header ul li {
+    margin-right: 15px;
+    /* Espaciado entre elementos */
+}
+
+/* Estilo de los enlaces */
+header ul li a {
+    text-decoration: none;
+    /* Sin subrayado */
+    color: white;
+    /* Texto blanco */
+    font-size: 16px;
+    padding: 5px 10px;
+    /* Espaciado interno */
+    transition: background-color 0.3s ease;
+    /* Animación suave */
+}
+
+/* Efecto hover en los enlaces */
+header ul li a:hover {
+    background-color: #575757;
+    /* Fondo gris al pasar el mouse */
+    border-radius: 4px;
+    /* Bordes redondeados */
+}
+
+
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
