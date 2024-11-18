@@ -38,7 +38,7 @@ app.post('/submit-form', (req, res) => {
 
 // Página principal
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'eso.html'));
+    res.sendFile(path.join(__dirname, 'public', 'segundo.html'));
 });
 
 app.listen(port, () => {
