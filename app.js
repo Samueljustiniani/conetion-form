@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const mysql = require('mysql2');
 const path = require('path');
 const app = express();
-const ip = '54.167.194.202';
+const ip = '100.29.166.86';
 const port = 3000;
 
 // Configuración de middleware
@@ -25,14 +25,14 @@ let pool = mysql.createPool({
 app.post('/submit-form', (req, res) => {
     const { numeroCuenta, nombreCliente, saldo, tipoCuenta } = req.body;
 
-    const query = 'INSERT INTO Clientes (numeroCuenta, nombreCliente, saldo, tipoCuenta) VALUES (?, ?, ?, ?)';
+    const query = 'INSERT INTO cliente (numeroCuenta, nombreCliente, saldo, tipoCuenta) VALUES (?, ?, ?, ?)';
     pool.query(query, [numeroCuenta, nombreCliente, saldo, tipoCuenta], (err, result) => {
         if (err) {
             console.error('Error al insertar datos: ' + err.stack);
             return res.status(500).send('Ocurrió un error al procesar tu consulta.');
         }
         // Enviar una respuesta de éxito
-        res.status(200).send('Cliente registrado exitosamente');
+        res.status(200).send('cliente registrado exitosamente');
     });
 });
 
